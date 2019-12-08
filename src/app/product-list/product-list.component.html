@@ -1,0 +1,14 @@
+<p>Products :</p>
+
+<div class="prodct-container" *ngFor="let product of productList">
+    <div class="prodct-info">
+        <h5>{{product.productName}} (Prix: {{product.price}}€)</h5>
+        <img width="100px" src="{{product.pictureUrl}}" />
+    </div>
+    <div class="prodct-description">
+            {{product.description}}
+    </div>
+    <button class="prodct-buy">
+        Acheter
+    </button>
+</div>
